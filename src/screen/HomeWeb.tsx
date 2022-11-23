@@ -122,6 +122,10 @@ import card from "./card.png";
 import like from "../components/img/coracao.png";
 import seta from "../components/img/chevron-right-small.png"
 import perfume from "./perfume.png";
+import bolsa1 from "./bolsa1.png";
+import bolsa2 from "./bolsa2.png";
+import bolsa3 from "./bolsa3.png";
+import bolsa4 from "./bolsa4.png";
 
 
 export function HomeWeb() {
@@ -150,7 +154,7 @@ export function HomeWeb() {
         
         <CardBox>
         <Card>
-          <img src={card} alt="" />
+          <img src={bolsa1} alt="" />
           <Descript>
             <div>
               <h4>Grande</h4>
@@ -162,7 +166,7 @@ export function HomeWeb() {
           </Descript>
         </Card>
         <Card>
-          <img src={card} alt="" />
+          <img src={bolsa2} alt="" />
           <Descript>
             <div>
               <h4>Grande</h4>
@@ -174,7 +178,7 @@ export function HomeWeb() {
           </Descript>
         </Card>
         <Card>
-          <img src={card} alt="" />
+          <img src={bolsa3} alt="" />
           <Descript>
             <div>
               <h4>Grande</h4>
@@ -186,7 +190,7 @@ export function HomeWeb() {
           </Descript>
         </Card>
         <Card>
-          <img src={card} alt="" />
+          <img src={bolsa4} alt="" />
           <Descript>
             <div>
               <h4>Grande</h4>
