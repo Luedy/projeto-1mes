@@ -122,10 +122,10 @@ import card from "./card.png";
 import like from "../components/img/coracao.png";
 import seta from "../components/img/chevron-right-small.png"
 import perfume from "./perfume.png";
-import bolsa1 from "./bolsa1.png";
-import bolsa2 from "./bolsa2.png";
-import bolsa3 from "./bolsa3.png";
-import bolsa4 from "./bolsa4.png";
+import bolsa1 from "../img/bolsa1.png";
+import bolsa2 from "../img/bolsa2.png";
+import bolsa3 from "../img/bolsa3.png";
+import bolsa4 from "../img/bolsa4.png";
 
 
 export function HomeWeb() {
