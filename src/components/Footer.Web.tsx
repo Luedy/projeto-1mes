@@ -117,12 +117,12 @@ const Box = styled.div`
 
 // © 2021 | Cora Leviene All Rights Reserved
 
-import location from './img/location.svg';
+import location from './img/location.png';
 
-import facebook from './img/rdsocial/fblogo.svg'
-import instagram from './img/rdsocial/instagram.svg'
-import twitter from './img/rdsocial/twitter.svg'
-import youtube from './img/rdsocial/youtube.svg'
+import facebook from './img/rdsocial/fblogo.png'
+import instagram from './img/rdsocial/instagram.png'
+import twitter from './img/rdsocial/twitter.png'
+import youtube from './img/rdsocial/youtube.png'
 
 
 
