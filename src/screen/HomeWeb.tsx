@@ -42,10 +42,9 @@ const Carrosel = styled.div`
   }
 `;
 
-
-const  CardBox = styled.div`
-  display:flex;
-`
+const CardBox = styled.div`
+  display: flex;
+`;
 
 const Card = styled.div`
   width: 286px;
@@ -84,49 +83,57 @@ const Descript = styled.div`
 `;
 
 const Collections = styled.div`
-  background:#1B4B66;
+  background: #1b4b66;
   display: flex;
   flex-direction: column;
-  h2{
-    color: #FFF;
-    margin: 32px 0 24px 33px;
+  align-items: center;
+  div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    h2 {
+      color: #fff;
+      margin: 32px 0 24px 25px;
+    }
   }
-  
-`
+`;
 
 const CollectionsCardBox = styled.div`
-  display:flex;
-  width:98%;
-  background:red;
-  align-items:"center" !important;
-  justify-content: "center";
-  margin: 0 auto;
-`
+  display: flex;
+  width: 98%;
+  align-items: center;
+  justify-content: center;
+`;
 
 const ColectionsCard = styled.div`
-    background-image:url(${perfume});
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-    border-radius:10px;
-    margin-left:20px;
-    margin-right:30px;
-    width:280px;
-    height:280px;
-`
-
+  background-image: url(${perfume});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  h3{
+    margin: 0 0 16px 16px;
+  }
+`;
 
 
 
 import card from "./card.png";
 import like from "../components/img/coracao.png";
 import seta from "../components/img/chevron-right-small.png"
-import perfume from "./perfume.png";
-import bolsa1 from "../img/bolsa1.png";
-import bolsa2 from "../img/bolsa2.png";
-import bolsa3 from "../img/bolsa3.png";
-import bolsa4 from "../img/bolsa4.png";
-
+import perfume from "./img/perfume.png";
+import bolsa1 from "./img/bolsa1.png";
+import bolsa2 from "./img/bolsa2.png";
+import bolsa3 from "./img/bolsa3.png";
+import bolsa4 from "./img/bolsa4.png";
 
 export function HomeWeb() {
   return (
@@ -151,74 +158,76 @@ export function HomeWeb() {
             <img src={seta} alt="seta" />
           </div>
         </div>
-        
+
         <CardBox>
-        <Card>
-          <img src={bolsa1} alt="" />
-          <Descript>
-            <div>
-              <h4>Grande</h4>
-              <p>Blossom Pouch</p>
-              <h4>$39.49</h4>
-            </div>
+          <Card>
+            <img src={bolsa1} alt="" />
+            <Descript>
+              <div>
+                <h4>Grande</h4>
+                <p>Blossom Pouch</p>
+                <h4>$39.49</h4>
+              </div>
 
-            <img src={like} alt="curtida" />
-          </Descript>
-        </Card>
-        <Card>
-          <img src={bolsa2} alt="" />
-          <Descript>
-            <div>
-              <h4>Grande</h4>
-              <p>Blossom Pouch</p>
-              <h4>$39.49</h4>
-            </div>
+              <img src={like} alt="curtida" />
+            </Descript>
+          </Card>
+          <Card>
+            <img src={bolsa2} alt="" />
+            <Descript>
+              <div>
+                <h4>Grande</h4>
+                <p>Blossom Pouch</p>
+                <h4>$39.49</h4>
+              </div>
 
-            <img src={like} alt="curtida" />
-          </Descript>
-        </Card>
-        <Card>
-          <img src={bolsa3} alt="" />
-          <Descript>
-            <div>
-              <h4>Grande</h4>
-              <p>Blossom Pouch</p>
-              <h4>$39.49</h4>
-            </div>
+              <img src={like} alt="curtida" />
+            </Descript>
+          </Card>
+          <Card>
+            <img src={bolsa3} alt="" />
+            <Descript>
+              <div>
+                <h4>Grande</h4>
+                <p>Blossom Pouch</p>
+                <h4>$39.49</h4>
+              </div>
 
-            <img src={like} alt="curtida" />
-          </Descript>
-        </Card>
-        <Card>
-          <img src={bolsa4} alt="" />
-          <Descript>
-            <div>
-              <h4>Grande</h4>
-              <p>Blossom Pouch</p>
-              <h4>$39.49</h4>
-            </div>
+              <img src={like} alt="curtida" />
+            </Descript>
+          </Card>
+          <Card>
+            <img src={bolsa4} alt="" />
+            <Descript>
+              <div>
+                <h4>Grande</h4>
+                <p>Blossom Pouch</p>
+                <h4>$39.49</h4>
+              </div>
 
-            <img src={like} alt="curtida" />
-          </Descript>
-        </Card>
+              <img src={like} alt="curtida" />
+            </Descript>
+          </Card>
         </CardBox>
       </Carrosel>
 
       <Collections>
-      <h2>Handpicked Collections</h2>
+        <div>
+          <h2>Handpicked Collections</h2>
+        </div>
         <CollectionsCardBox>
-        <ColectionsCard>
-          <h3>Personal Care</h3>
-        </ColectionsCard>
-        <ColectionsCard>
-          <h3>Personal Care</h3>
-        </ColectionsCard>
-        <ColectionsCard>
-          <h3>Personal Care</h3>
-        </ColectionsCard>
-        <ColectionsCard>
-          <h3>Personal Care</h3>
-        </ColectionsCard>
+          <ColectionsCard>
+            <div><h3>Personal Care</h3></div>
+          </ColectionsCard>
+          <ColectionsCard>
+            <div><h3>Personal Care</h3></div>
+          </ColectionsCard>
+          <ColectionsCard>
+            <div><h3>Personal Care</h3></div>
+          </ColectionsCard>
+          <ColectionsCard>
+            <div><h3>Personal Care</h3></div>
+          </ColectionsCard>
         </CollectionsCardBox>
       </Collections>
     </>

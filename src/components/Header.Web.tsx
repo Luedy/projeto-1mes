@@ -96,7 +96,7 @@ import lupa from "./img/lupa.svg";
 import bolsa from "./img/icon/bag.svg";
 import perfil from "./img/icon/profile.svg";
 import curtida from "./img/icon/wishlist.svg";
-import logo from "./img/logo.svg";
+import logo from "./img/logo.png";
 
 export function HeaderWeb() {
   return (
