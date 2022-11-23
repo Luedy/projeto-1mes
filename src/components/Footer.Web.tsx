@@ -119,10 +119,10 @@ const Box = styled.div`
 
 import location from './img/location.png';
 
-import facebook from './img/rdsocial/fblogo.png'
-import instagram from './img/rdsocial/instagram.png'
-import twitter from './img/rdsocial/twitter.png'
-import youtube from './img/rdsocial/youtube.png'
+import facebook from './img/fblogo.png'
+import instagram from './img/instagram.png'
+import twitter from './img/twitter.png'
+import youtube from './img/youtube.png'
 
 
 
