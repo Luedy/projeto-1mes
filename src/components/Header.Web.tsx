@@ -16,9 +16,9 @@ const Header = styled.header`
   display: flex;
   width: 100%;
   height: 80px;
-  background:#FFF;
   align-items: center;
   font-family:'Inter', sans-serif;
+  justify-content: space-around;
 `;
 
 const Container = styled.div`
@@ -49,7 +49,6 @@ const Input = styled.input`
   font-size: 14px;
   border: none;
   outline: none;
-
   background: "transparent";
 `;
 
@@ -71,7 +70,6 @@ const Bag = styled.img`
   width: 24px;
   height: 24px;
   cursor:pointer;
-
 `
 
 const Perfil = styled.img`
@@ -88,6 +86,12 @@ const Curtida = styled.img`
   cursor:pointer;
 `
 
+const Body = styled.body`
+    padding:0;
+    margin:0;
+    box-sizen:border-box;
+`
+
 import lupa from "./img/lupa.svg";
 import bolsa from "./img/icon/bag.svg";
 import perfil from "./img/icon/profile.svg";
@@ -96,6 +100,7 @@ import logo from "./img/logo.svg";
 
 export function HeaderWeb() {
   return (
+    <Body>
     <Header>
       <Logo src={logo} alt="logo" />
       <Container>
@@ -115,5 +120,6 @@ export function HeaderWeb() {
       <Bag src={bolsa} alt="bolsa"></Bag>
       </ContainerUtils>
     </Header>
+    </Body>
   );
 }
