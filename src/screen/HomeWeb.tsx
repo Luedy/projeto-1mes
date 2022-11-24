@@ -14,20 +14,25 @@ const Experienci = styled.div`
 `;
 
 const Banner = styled.div`
+  
   width: 98%;
   height: 400px;
-  background: red;
+  background-image: url(${banner});
   margin: 0 auto;
   margin-top: 24px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border-radius: 16px;
   div {
-    width: 650px;
+    
+    width: 759px;
     height: 316px;
-    background: gray;
+    background: white;
+    opacity: 60%;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
+    
   }
 `;
 
@@ -49,6 +54,7 @@ const CardBox = styled.div`
 const Card = styled.div`
   width: 286px;
   margin-right: 40px;
+  
   img {
     width: 284px;
     height: 350px;
@@ -105,8 +111,10 @@ const CollectionsCardBox = styled.div`
   justify-content: center;
 `;
 
-const ColectionsCard = styled.div`
-  background-image: url(${perfume});
+interface Props {name: string}
+
+const ColectionsCard = styled.div<Props>`
+  background-image: url(${(props)=> props.name});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -120,6 +128,7 @@ const ColectionsCard = styled.div`
   align-items: end;
   justify-content: flex-end;
   margin-bottom: 40px;
+
   h3 {
     margin: 0 0 16px 16px;
   }
@@ -168,6 +177,7 @@ const Especial = styled.div`
 
 const Banner2 = styled.div`
   height:400px;
+  
   width:98%;
   background: gray;
   margin: 0 auto;
@@ -187,6 +197,7 @@ const BannerBox = styled.div`
 
 const Banner3 = styled.div`
   height: 228px;
+  
   width: 604px;
   background: gray;
   border-radius: 16px;
@@ -218,6 +229,10 @@ import chanel from "./logos/Chanel_logo_interlocking_cs1.png";
 import banner2 from "./img/card2.png";
 import banner3 from "./img/card2.1.png";
 import banner4 from "./img/card2.2.png";
+import banner from "././img/banner.png";
+import sunGlasses from "./img/oculos.png";
+import relogio from "./img/relogio.png";
+
  
 export function HomeWeb() {
   return (
@@ -231,7 +246,8 @@ export function HomeWeb() {
       </Experienci>
 
       <Banner>
-        <div></div>
+        <div>
+        </div>
       </Banner>
 
       <Carrosel>
@@ -300,23 +316,23 @@ export function HomeWeb() {
           <h2>Handpicked Collections</h2>
         </div>
         <CollectionsCardBox>
-          <ColectionsCard>
+          <ColectionsCard name = {perfume}>
             <div>
               <h3>Personal Care</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard>
+          <ColectionsCard name = {bolsa1}>
             <div>
-              <h3>Personal Care</h3>
+              <h3>Handbags</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard>
+          <ColectionsCard name = {relogio}>
             <div>
-              <h3>Personal Care</h3>
+              <h3>Wrist Watches</h3>
             </div>
           </ColectionsCard>
-          <ColectionsCard>
-            <h3>Personal Care</h3>
+          <ColectionsCard name = {sunGlasses}>
+            <h3>Sun Glasses</h3>
           </ColectionsCard>
         </CollectionsCardBox>
       </Collections>
