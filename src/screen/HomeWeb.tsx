@@ -119,11 +119,84 @@ const ColectionsCard = styled.div`
   flex-direction: column;
   align-items: end;
   justify-content: flex-end;
-  h3{
+  margin-bottom: 40px;
+  h3 {
     margin: 0 0 16px 16px;
   }
 `;
 
+const Shots = styled.div`
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    h2 {
+      margin: 0 0 24px 65px;
+    }
+  }
+`;
+
+const ShotBox = styled.div`
+  display: flex;
+  width: 96%;
+  justify-content: center;
+  div {
+    width: 168px;
+    height: 168px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+  }
+`;
+
+const Especial = styled.div`
+  width: 160px;
+  height: 160px;
+  background: #f4f4f4;
+  margin-right: 46px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+`;
+
+const Banner2 = styled.div`
+  height:400px;
+  width:98%;
+  background: gray;
+  margin: 0 auto;
+  margin-bottom:40px;
+  margin-top:68px;
+`
+
+const BannerBox = styled.div`
+  margin: 0 auto;
+  width: 98%;
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:73px;
+  
+`
+
+const Banner3 = styled.div`
+  height: 228px;
+  width: 604px;
+  background: gray;
+  border-radius: 16px;
+`
+
+const Banner4 = styled.div`
+    height: 228px;
+  width: 604px;
+  background: gray;
+  border-radius: 16px;
+`
 
 
 import card from "./card.png";
@@ -134,6 +207,13 @@ import bolsa1 from "./img/bolsa1.png";
 import bolsa2 from "./img/bolsa2.png";
 import bolsa3 from "./img/bolsa3.png";
 import bolsa4 from "./img/bolsa4.png";
+import { FooterWeb } from "../components/Footer.Web";
+import hem from "./logos/H&M-Logo1.png";
+import zara from "./logos/zara_logo.png";
+import dolceGabana from "./logos/Dolce_&_Gabban1.png";
+import prada from "./logos/Prada-Logo1.png";
+import biba from "./logos/bibaLogo.png";
+import chanel from "./logos/Chanel_logo_interlocking_cs1.png";
 
 export function HomeWeb() {
   return (
@@ -217,19 +297,61 @@ export function HomeWeb() {
         </div>
         <CollectionsCardBox>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <div>
+              <h3>Personal Care</h3>
+            </div>
           </ColectionsCard>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <div>
+              <h3>Personal Care</h3>
+            </div>
           </ColectionsCard>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <div>
+              <h3>Personal Care</h3>
+            </div>
           </ColectionsCard>
           <ColectionsCard>
-            <div><h3>Personal Care</h3></div>
+            <h3>Personal Care</h3>
           </ColectionsCard>
         </CollectionsCardBox>
       </Collections>
+
+      <Shots>
+        <div>
+          <h2>Shop by Brands</h2>
+        </div>
+        <ShotBox>
+          <Especial>
+            <img src={zara} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={biba} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={chanel} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={prada} alt="zara" />
+          </Especial>
+          <Especial>
+            <img src={dolceGabana} alt="zara" />
+          </Especial>
+          <div>
+            <img src={hem} alt="zara" />
+          </div>
+        </ShotBox>
+      </Shots>
+
+      <Banner2></Banner2>
+
+      <BannerBox>
+        <Banner3></Banner3>
+        <Banner4></Banner4>
+      </BannerBox>
+
+      <FooterWeb/>
+
     </>
   );
 }
