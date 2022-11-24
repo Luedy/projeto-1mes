@@ -173,6 +173,7 @@ const Banner2 = styled.div`
   margin: 0 auto;
   margin-bottom:40px;
   margin-top:68px;
+  border-radius: 16px;
 `
 
 const BannerBox = styled.div`
@@ -214,7 +215,10 @@ import dolceGabana from "./logos/Dolce_&_Gabban1.png";
 import prada from "./logos/Prada-Logo1.png";
 import biba from "./logos/bibaLogo.png";
 import chanel from "./logos/Chanel_logo_interlocking_cs1.png";
-
+import banner2 from "./img/card2.png";
+import banner3 from "./img/card2.1.png";
+import banner4 from "./img/card2.2.png";
+ 
 export function HomeWeb() {
   return (
     <>
@@ -343,11 +347,17 @@ export function HomeWeb() {
         </ShotBox>
       </Shots>
 
-      <Banner2></Banner2>
+      <Banner2>
+        <img src={banner2} alt="banner2" />
+      </Banner2>
 
       <BannerBox>
-        <Banner3></Banner3>
-        <Banner4></Banner4>
+        <Banner3>
+          <img src={banner3} alt="banner2" />
+        </Banner3>
+        <Banner4>
+          <img src={banner4} alt="banner2" />
+        </Banner4>
       </BannerBox>
 
       <FooterWeb/>
