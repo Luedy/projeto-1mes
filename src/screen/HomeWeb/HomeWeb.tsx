@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { HeaderWeb } from "../components/Header.Web";
-import GlobalStyle from "../components/styles";
+import { HeaderWeb } from "../../components/Header.Web";
+import GlobalStyle from "../../components/styles";
 
 const Experienci = styled.div`
   width: 100%;
@@ -283,7 +283,7 @@ import bolsa1 from "./img/bolsa1.png";
 import bolsa2 from "./img/bolsa2.png";
 import bolsa3 from "./img/bolsa3.png";
 import bolsa4 from "./img/bolsa4.png";
-import { FooterWeb } from "../components/Footer.Web";
+import { FooterWeb } from "../../components/Footer.Web";
 import hem from "./logos/H&M-Logo1.png";
 import zara from "./logos/zara_logo.png";
 import dolceGabana from "./logos/Dolce_&_Gabban1.png";
