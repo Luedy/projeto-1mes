@@ -28,11 +28,27 @@ const Banner = styled.div`
     
     width: 759px;
     height: 316px;
-    background: white;
-    opacity: 60%;
+    background:#E5E5E5;
+    opacity: 70%;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     
+  }
+
+  h2 {
+    font-size:60px;
+    font-weight: 800;
+    color: #1B4B66;   
+    padding-top: 60px;
+    margin-left: 30px;
+  }
+
+  p {
+    font-size: 28px;
+    color: ##1B4B66;
+    font-weight:500;
+    padding-top: 10px;
+    margin-left: 30px;
   }
 `;
 
@@ -82,6 +98,7 @@ const Descript = styled.div`
     width: 18px;
     height: 18px;
     margin-left: 60%;
+    margin-top: 10px;
   }
   h4 {
     font-size: 16px;
@@ -155,7 +172,8 @@ const Shots = styled.div`
     display: flex;
     align-items: flex-start;
     h2 {
-      margin: 0 0 24px 65px;
+      margin: 0 0 44px 35px;
+      font-size: 34px;
     }
   }
 `;
@@ -163,7 +181,7 @@ const Shots = styled.div`
 const ShotBox = styled.div`
   display: flex;
   width: 96%;
-  justify-content: center;
+  justify-content: space-around;
   div {
     width: 168px;
     height: 168px;
@@ -316,6 +334,8 @@ export function HomeWeb() {
 
       <Banner>
         <div>
+          <h2>Carry your Funk</h2>
+          <p>Trendy handbags collection for yout <br></br> party animal</p>
         </div>
       </Banner>
 

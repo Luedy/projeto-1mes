@@ -19,6 +19,8 @@ const Header = styled.header`
   align-items: center;
   font-family:'Inter', sans-serif;
   justify-content: space-around;
+  background: white;
+  
 `;
 
 const Container = styled.div`
