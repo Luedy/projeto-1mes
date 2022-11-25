@@ -87,6 +87,8 @@ const Descript = styled.div`
     font-size: 16px;
     font-weight: 500;
     font-family: "Inter";
+    padding-top: 10px;
+    padding-bottom:20px;
   }
   p {
     font-size: 14px;
@@ -343,9 +345,9 @@ export function HomeWeb() {
             <img src={bolsa2} alt="" />
             <Descript>
               <div>
-                <h4>Grande</h4>
-                <p>Blossom Pouch</p>
-                <h4>$39.49</h4>
+                <h4>Coach</h4>
+                <p>Leather Coach </p>
+                <h4>$54.69</h4>
               </div>
 
               <img src={like} alt="curtida" />
@@ -355,9 +357,9 @@ export function HomeWeb() {
             <img src={bolsa3} alt="" />
             <Descript>
               <div>
-                <h4>Grande</h4>
-                <p>Blossom Pouch</p>
-                <h4>$39.49</h4>
+                <h4>Remus</h4>
+                <p>Brown Strap </p>
+                <h4>$57.49</h4>
               </div>
 
               <img src={like} alt="curtida" />
@@ -367,9 +369,9 @@ export function HomeWeb() {
             <img src={bolsa4} alt="" />
             <Descript>
               <div>
-                <h4>Grande</h4>
-                <p>Blossom Pouch</p>
-                <h4>$39.49</h4>
+                <h4>Boujee</h4>
+                <p>Black Bag</p>
+                <h4>$56.49</h4>
               </div>
 
               <img src={like} alt="curtida" />
