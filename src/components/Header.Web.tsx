@@ -4,14 +4,16 @@ import styled from "styled-components";
 export interface HeaderProps {}
 
 
-
 const Itens = styled.a`
   font-size: 14px;
   color: #171520;
   margin-right: 20px;
   cursor: pointer;
+  a{
+    text-decoration:none;
+    color:black;
+  }
 `;
-
 const Header = styled.header`
   display: flex;
   width: 100%;
@@ -104,9 +106,9 @@ export function HeaderWeb() {
   return (
     <Body>
     <Header>
-      <Logo src={logo} alt="logo" />
+      <a href="http://localhost:5173/"><Logo src={logo} alt="logo" /></a>
       <Container>
-        <Itens>Handbags</Itens>
+        <Itens><a href="http://127.0.0.1:5174/HomeCategory">Handbags</a></Itens>
         <Itens>Watches</Itens>
         <Itens>Skincare</Itens>
         <Itens>Jewellery</Itens>

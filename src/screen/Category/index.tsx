@@ -77,10 +77,10 @@ const Tags = styled.div`
 
 
 import { FooterWeb } from "../../components/Footer.Web";
-import bolsa from "./image.png";
+import bolsa from "./bolsa1.png";
 import like from "../../components/img/coracao.png";
 import estrela from "./icon/Vector-1.png";
-import estrela2 from "./icon/Vector-4.png";
+import estrela2 from "./icon/Vector-1.png";
 import plus from "../../components/img/plus.png";
 import minus from "../../components/img/small-minus.png";
 export function Category() {
