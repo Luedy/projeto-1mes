@@ -44,16 +44,24 @@ const Carrosel = styled.div`
     font-size: 34px;
     line-height: 44px;
     font-family: "Inter";
+    margin-top: 50px;
   }
+  width:98%;
+  margin: 0 auto;
+
+ 
+  
+ 
 `;
 
 const CardBox = styled.div`
-  display: flex;
+  display: flex; 
+  justify-content: space-around;
 `;
 
 const Card = styled.div`
   width: 286px;
-  margin-right: 40px;
+  
   
   img {
     width: 284px;
@@ -177,13 +185,36 @@ const Especial = styled.div`
 
 const Banner2 = styled.div`
   height:400px;
-  
   width:98%;
   background: gray;
   margin: 0 auto;
   margin-bottom:40px;
   margin-top:68px;
   border-radius: 16px;
+  background-image: url(${banner2});
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 30px;
+    color: #97451F;
+    
+  }
+  h3 {
+    font-size: 52px;
+    color: #97451F;
+    padding-top: 20px;
+    font-weight: 700;
+  }
+
+  p, h3 {
+    margin-left: 50px; 
+
+  }
+
+  
+ 
 `
 
 const BannerBox = styled.div`
@@ -197,17 +228,50 @@ const BannerBox = styled.div`
 
 const Banner3 = styled.div`
   height: 228px;
-  
-  width: 604px;
+  width: 49%;
   background: gray;
   border-radius: 16px;
+  background-image: url(${retangulo});
+  background-size: cover;
+  display: flex;
+  text-align: right;
+  
+  img{
+    border-radius: 16px;
+  }
+
+  h3 {
+    color: #A53F64;
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute; 
+    margin-top: 26px;
+    left: 580px;
+  }
 `
 
 const Banner4 = styled.div`
-    height: 228px;
-  width: 604px;
+  height: 228px;
+  width: 49%;
   background: gray;
   border-radius: 16px;
+  background-image: url(${banner4});
+  background-size: cover;
+  display: flex;
+  text-align: right;
+  
+  img{
+    border-radius: 16px;
+  }
+  h3 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1B4B66;
+    right: 40px;
+    margin-top: 26px;
+  }
 `
 
 
@@ -232,6 +296,9 @@ import banner4 from "./img/card2.2.png";
 import banner from "././img/banner.png";
 import sunGlasses from "./img/oculos.png";
 import relogio from "./img/relogio.png";
+import retangulo from "./img/Rectangle48.png";
+import setaRosa from "./img/setaRosa.png";
+import setaAzul from "./img/setaAzul.png";
 
  
 export function HomeWeb() {
@@ -364,15 +431,18 @@ export function HomeWeb() {
       </Shots>
 
       <Banner2>
-        <img src={banner2} alt="banner2" />
+       <p>LIFESTYLE</p>
+       <h3>Makeup Accessories<br></br> from Top Brands</h3>
       </Banner2>
 
       <BannerBox>
         <Banner3>
+        <h3>Skincare<br></br>Essentials</h3> 
           <img src={banner3} alt="banner2" />
         </Banner3>
         <Banner4>
           <img src={banner4} alt="banner2" />
+          <h3>Facepacks<br></br>& Pells</h3> 
         </Banner4>
       </BannerBox>
 
