@@ -8,8 +8,8 @@ function App() {
 
 
   return (
-     <Category/>
-     //<HomeWeb/>
+    // <Category/>
+     <HomeWeb/>
   )
 }
 
