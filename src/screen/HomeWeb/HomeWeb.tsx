@@ -276,13 +276,13 @@ const Banner4 = styled.div`
 
 
 import card from "./card.png";
-import like from "../components/img/coracao.png";
-import seta from "../components/img/chevron-right-small.png"
-import perfume from "./img/perfume.png";
-import bolsa1 from "./img/bolsa1.png";
-import bolsa2 from "./img/bolsa2.png";
-import bolsa3 from "./img/bolsa3.png";
-import bolsa4 from "./img/bolsa4.png";
+import like from "../../components/img/coracao.png";
+import seta from "../../components/img/chevron-right-small.png"
+import perfume from "../img/perfume.png";
+import bolsa1 from "../img/bolsa1.png";
+import bolsa2 from "../img/bolsa2.png";
+import bolsa3 from "../img/bolsa3.png";
+import bolsa4 from "../img/bolsa4.png";
 import { FooterWeb } from "../../components/Footer.Web";
 import hem from "./logos/H&M-Logo1.png";
 import zara from "./logos/zara_logo.png";
@@ -290,15 +290,15 @@ import dolceGabana from "./logos/Dolce_&_Gabban1.png";
 import prada from "./logos/Prada-Logo1.png";
 import biba from "./logos/bibaLogo.png";
 import chanel from "./logos/Chanel_logo_interlocking_cs1.png";
-import banner2 from "./img/card2.png";
-import banner3 from "./img/card2.1.png";
-import banner4 from "./img/card2.2.png";
-import banner from "././img/banner.png";
-import sunGlasses from "./img/oculos.png";
-import relogio from "./img/relogio.png";
-import retangulo from "./img/Rectangle48.png";
-import setaRosa from "./img/setaRosa.png";
-import setaAzul from "./img/setaAzul.png";
+import banner2 from "../img/card2.png";
+import banner3 from "../img/card2.1.png";
+import banner4 from "../img/card2.2.png";
+import banner from ".././img/banner.png";
+import sunGlasses from "../img/oculos.png";
+import relogio from "../img/relogio.png";
+import retangulo from "../img/Rectangle48.png";
+import setaRosa from "../img/setaRosa.png";
+import setaAzul from "../img/setaAzul.png";
 
  
 export function HomeWeb() {
