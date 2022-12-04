@@ -46,6 +46,10 @@ const Description = styled.div`
     display: flex;
     justify-content: space-between;
   }
+  img{
+    width:18px;
+    height:17px;
+  }
 `;
 
 const Avaliacao = styled.div`
@@ -77,16 +81,97 @@ const Tags = styled.div`
 
 
 import { FooterWeb } from "../../components/Footer.Web";
+import { CardWrapper } from "../../components/Card";
+
+import bolsa2 from './bolsa2.png'
 import bolsa from "./bolsa1.png";
 import like from "../../components/img/coracao.png";
 import estrela from "./icon/Vector-1.png";
 import estrela2 from "./icon/Vector-1.png";
 import plus from "../../components/img/plus.png";
 import minus from "../../components/img/small-minus.png";
+import { Link, useHref } from "react-router-dom";
 export function Category() {
+  const contentCard = [
+    {
+    img:bolsa2,
+    nome:"Remus",
+    tipo:"Brown Strap Bag",
+    price: "$57.00",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+
+
+]
+
+
   return (
     <>
-      
       <HeaderWeb />
       <BannerPrincipal></BannerPrincipal>
       <SectionContent>
@@ -102,7 +187,7 @@ export function Category() {
             <img src={minus} alt="plus" />
           </Tags>
           <ChecksBox>
-          <CheckContent>
+            <CheckContent>
               <input type="checkbox" />
               <p>Blue</p>
             </CheckContent>
@@ -135,257 +220,42 @@ export function Category() {
               <p>Blue</p>
             </CheckContent>
             <Tags>
-            {" "}
-            <p>Size</p>
-            <img src={plus} alt="plus" />
-          </Tags>
-          <Tags>
-            {" "}
-            <p>Size</p>
-            <img src={plus} alt="plus" />
-          </Tags>
-          <Tags>
-            {" "}
-            <p>Size</p>
-            <img src={plus} alt="plus" />
-          </Tags>
-          <Tags>
-            {" "}
-            <p>Size</p>
-            <img src={plus} alt="plus" />
-          </Tags>
+              {" "}
+              <p>Size</p>
+              <img src={plus} alt="plus" />
+            </Tags>
+            <Tags>
+              {" "}
+              <p>Size</p>
+              <img src={plus} alt="plus" />
+            </Tags>
+            <Tags>
+              {" "}
+              <p>Size</p>
+              <img src={plus} alt="plus" />
+            </Tags>
+            <Tags>
+              {" "}
+              <p>Size</p>
+              <img src={plus} alt="plus" />
+            </Tags>
           </ChecksBox>
         </FilterBar>
         <Content>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
-          <Card>
-            <img src={bolsa} alt="bolsa" />
-            <Description>
-              <div>
-                <h4>Grande</h4>
-                <img src={like} alt="like" />
-              </div>
-              <p>Blossom Pouch</p>
-              <Avaliacao>
-                <Estrela>
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela} alt="" />
-                  <img src={estrela2} alt="" />
-                </Estrela>
-                <p>43 Ratings</p>
-              </Avaliacao>
-              <Price>
-                <h4>$39.49</h4>
-                <s>$78.66</s>
-                <h5>50% OFF</h5>
-              </Price>
-            </Description>
-          </Card>
+        {
+          contentCard.map(cards=> <Link
+            style={{ textDecoration: "none", color: "black" }}
+            to={"/HomeCategory/Label"}
+            onClick={() => {
+              console.log("redirecionando");
+            }}
+          ><CardWrapper nome={cards.nome} tipo={cards.tipo} price={cards.price} oriPrice={cards.oPrice} imgBolsa={cards.img} ></CardWrapper> </Link> )
+        }
+        
         </Content>
       </SectionContent>
 
-      <FooterWeb/>
+      <FooterWeb />
     </>
   );
 }
