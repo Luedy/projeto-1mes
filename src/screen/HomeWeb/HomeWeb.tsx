@@ -34,7 +34,6 @@ const Banner = styled.div`
     border-bottom-left-radius: 24px;
     
   }
-
   h2 {
     font-size:60px;
     font-weight: 800;
@@ -42,7 +41,6 @@ const Banner = styled.div`
     padding-top: 60px;
     margin-left: 30px;
   }
-
   p {
     font-size: 28px;
     color: ##1B4B66;
@@ -64,7 +62,6 @@ const Carrosel = styled.div`
   }
   width:98%;
   margin: 0 auto;
-
  
   
  
@@ -155,7 +152,6 @@ const ColectionsCard = styled.div<Props>`
   align-items: end;
   justify-content: flex-end;
   margin-bottom: 40px;
-
   h3 {
     margin: 0 0 16px 16px;
   }
@@ -227,12 +223,9 @@ const Banner2 = styled.div`
     padding-top: 20px;
     font-weight: 700;
   }
-
   p, h3 {
     margin-left: 50px; 
-
   }
-
   
  
 `
@@ -259,7 +252,6 @@ const Banner3 = styled.div`
   img{
     border-radius: 16px;
   }
-
   h3 {
     color: #A53F64;
     font-size: 40px;
@@ -305,10 +297,10 @@ import bolsa3 from "../img/bolsa3.png";
 import bolsa4 from "../img/bolsa4.png";
 import { FooterWeb } from "../../components/Footer.Web";
 import hem from "./logos/H&M-Logo1.png";
-import zara from "./logos/zara_logo.png";
+import zara from "./logos/Zara_Logo.png";
 import dolceGabana from "./logos/Dolce_&_Gabban1.png";
 import prada from "./logos/Prada-Logo1.png";
-import biba from "./logos/bibaLogo.png";
+import biba from "./logos/BibaLogo.png";
 import chanel from "./logos/Chanel_logo_interlocking_cs1.png";
 import banner2 from "../img/card2.png";
 import banner3 from "../img/card2.1.png";

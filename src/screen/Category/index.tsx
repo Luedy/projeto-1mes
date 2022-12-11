@@ -5,14 +5,7 @@ import { HeaderWeb } from "../../components/Header.Web";
 const BannerPrincipal = styled.div`
   width: 98%;
   height: 400px;
-
-  background-color:#ECEBF1; 
-  background-image: url(${base});
-  background-image: url(${base2});
-  background-image: url(${base1});
-  background-repeat: no-repeat;
-  background-position: center;
-  
+  background: red;
   margin: 0 auto;
   border-radius: 24px;
   margin-bottom: 68px;
@@ -90,15 +83,11 @@ const Tags = styled.div`
 import { FooterWeb } from "../../components/Footer.Web";
 import { CardWrapper } from "../../components/Card";
 
-import bolsa2 from '../img/bolsa2.png';
+import bolsa2 from './bolsa2.png'
 import bolsa from "./bolsa1.png";
 import like from "../../components/img/coracao.png";
 import estrela from "./icon/Vector-1.png";
 import estrela2 from "./icon/Vector-1.png";
-import hero from "./icon/hero.png";
-import base from "./icon/base.png";
-import base1 from "./icon/baseMetade.png";
-import base2 from "./icon/baseDireita.png";
 import plus from "../../components/img/plus.png";
 import minus from "../../components/img/small-minus.png";
 import { Link, useHref } from "react-router-dom";
@@ -106,7 +95,7 @@ export function Category() {
   const contentCard = [
     {
     img:bolsa2,
-    nome:"Grande",
+    nome:"Remus",
     tipo:"Brown Strap Bag",
     price: "$57.00",
     oPrice: "$78.66"
@@ -114,24 +103,32 @@ export function Category() {
   },
   {
     img:bolsa,
-    nome:"Remus",
-    tipo:"Brown Strap Bag",
-    price: "$57.49",
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
     oPrice: "$78.66"
 
   },
   {
     img:bolsa,
-    nome:"Coach",
-    tipo:"Leather Coach Bag",
-    price: "$57.49",
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
     oPrice: "$78.66"
 
   },
   {
     img:bolsa,
-    nome:"Boujee",
-    tipo:"Black Bag",
+    nome:"Grande",
+    tipo:"Blossom Pouch",
+    price: "$39.49",
+    oPrice: "$78.66"
+
+  },
+  {
+    img:bolsa,
+    nome:"Grande",
+    tipo:"Blossom Pouch",
     price: "$39.49",
     oPrice: "$78.66"
 
