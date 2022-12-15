@@ -54,7 +54,7 @@ export const CouponBox: React.FC<CouponProps> = (props) => {
   return (
     <Teste2>
       <SlideBox
-        spaceBetween={-450} //sever para juntar ou afasta os itens
+        spaceBetween={-700} //sever para juntar ou afasta os itens
         slidesPerView={2}
         grabCursor={true}
       >

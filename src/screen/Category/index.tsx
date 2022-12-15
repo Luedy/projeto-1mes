@@ -101,7 +101,7 @@ export function Category() {
   const contentCard = [
     {
     img:bolsa2,
-    nome:"Remus",
+    nome:"Coach",
     tipo:"Brown Strap Bag",
     price: "$57.00",
     oPrice: "$78.66"
@@ -117,7 +117,7 @@ export function Category() {
   },
   {
     img:bolsa3,
-    nome:"Grande",
+    nome:"Remus",
     tipo:"Blossom Pouch",
     price: "$39.49",
     oPrice: "$78.66"
@@ -125,8 +125,8 @@ export function Category() {
   },
   {
     img:bolsa4,
-    nome:"Grande",
-    tipo:"Blossom Pouch",
+    nome:"Boujee",
+    tipo:"Black bag",
     price: "$39.49",
     oPrice: "$78.66"
 

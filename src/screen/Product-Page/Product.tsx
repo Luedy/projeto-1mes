@@ -97,7 +97,7 @@ export function Product() {
             </DeliveryContent>
 
             <Discount>
-              <input type="text" />
+              <input type="text" placeholder="Apply Valid Pincode"/>
               <a href="">CHECK</a>
             </Discount>
           </SecundaryBoxRight>

@@ -70,6 +70,21 @@ export const PriceBox = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+    h1{
+      margin-right:15px;
+    }
+
+    s {
+      margin-right: 15px;
+      font-size: 34px;
+      color: #b6b6b6;
+    }
+
+    p {
+      font-size: 20px;
+      color: red;
+      font-weight: bold;
+    }
 `;
 
 export const DeliveryContent = styled.div`
