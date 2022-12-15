@@ -1,16 +1,11 @@
-import { useState } from 'react'
 import React from 'react'
-import { HomeWeb } from './screen/HomeWeb/HomeWeb'
-import { Category } from './screen/Category'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import GlobalStyle from "./components/styles";
 
-import Routess from './routers'
-
-function App() {
-
-
-  return (
-     <Routess/>
-  )
-}
-
-export default App
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <GlobalStyle />
+    <App />
+  </React.StrictMode>
+)
