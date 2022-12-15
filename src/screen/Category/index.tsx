@@ -5,7 +5,10 @@ import { HeaderWeb } from "../../components/Header.Web";
 const BannerPrincipal = styled.div`
   width: 98%;
   height: 400px;
-  background: red;
+  background-image: url(${hero}), url(${baseDireita});
+  background-repeat: no-repeat, contain;
+  background-position: left, right;
+  
   margin: 0 auto;
   border-radius: 24px;
   margin-bottom: 68px;
@@ -81,10 +84,13 @@ const Tags = styled.div`
 
 
 import { FooterWeb } from "../../components/Footer.Web";
+import baseDireita from "./icon/baseDireita.png";
 import { CardWrapper } from "../../components/Card";
-
+import hero from "./icon/hero.png";
 import bolsa2 from '../img/bolsa2.png'
-import bolsa from "./bolsa1.png";
+import bolsa4 from '../img/bolsa4.png'
+import bolsa3 from '../img/bolsa3.png'
+import bolsa1 from "./bolsa1.png";
 import like from "../../components/img/coracao.png";
 import estrela from "./icon/Vector-1.png";
 import estrela2 from "./icon/Vector-1.png";
@@ -102,7 +108,7 @@ export function Category() {
 
   },
   {
-    img:bolsa,
+    img:bolsa1,
     nome:"Grande",
     tipo:"Blossom Pouch",
     price: "$39.49",
@@ -110,7 +116,7 @@ export function Category() {
 
   },
   {
-    img:bolsa,
+    img:bolsa3,
     nome:"Grande",
     tipo:"Blossom Pouch",
     price: "$39.49",
@@ -118,7 +124,7 @@ export function Category() {
 
   },
   {
-    img:bolsa,
+    img:bolsa4,
     nome:"Grande",
     tipo:"Blossom Pouch",
     price: "$39.49",
@@ -126,7 +132,7 @@ export function Category() {
 
   },
   {
-    img:bolsa,
+    img:bolsa1,
     nome:"Grande",
     tipo:"Blossom Pouch",
     price: "$39.49",
@@ -134,7 +140,7 @@ export function Category() {
 
   },
   {
-    img:bolsa,
+    img:bolsa1,
     nome:"Grande",
     tipo:"Blossom Pouch",
     price: "$39.49",
@@ -142,7 +148,7 @@ export function Category() {
 
   },
   {
-    img:bolsa,
+    img:bolsa1,
     nome:"Grande",
     tipo:"Blossom Pouch",
     price: "$39.49",
@@ -150,21 +156,14 @@ export function Category() {
 
   },
   {
-    img:bolsa,
+    img:bolsa1,
     nome:"Grande",
     tipo:"Blossom Pouch",
     price: "$39.49",
     oPrice: "$78.66"
 
   },
-  {
-    img:bolsa,
-    nome:"Grande",
-    tipo:"Blossom Pouch",
-    price: "$39.49",
-    oPrice: "$78.66"
-
-  },
+  
 
 
 ]
