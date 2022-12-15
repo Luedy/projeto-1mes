@@ -106,9 +106,9 @@ export function HeaderWeb() {
   return (
     <Body>
     <Header>
-      <a href="http://localhost:5173/"><Logo src={logo} alt="logo" /></a>
+      <a href="/"><Logo src={logo} alt="logo" /></a>
       <Container>
-        <Itens><a href="http://127.0.0.1:5174/HomeCategory">Handbags</a></Itens>
+        <Itens><a href="/HomeCategory">Handbags</a></Itens>
         <Itens>Watches</Itens>
         <Itens>Skincare</Itens>
         <Itens>Jewellery</Itens>

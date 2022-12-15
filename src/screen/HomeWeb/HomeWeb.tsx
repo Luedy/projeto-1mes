@@ -300,7 +300,7 @@ import hem from "./logos/H&M-Logo1.png";
 import zara from "./logos/Zara_Logo.png";
 import dolceGabana from "./logos/Dolce_&_Gabban1.png";
 import prada from "./logos/Prada-Logo1.png";
-import biba from "./logos/BibaLogo.png";
+import biba from "./logos/bibaLogo.png";
 import chanel from "./logos/Chanel_logo_interlocking_cs1.png";
 import banner2 from "../img/card2.png";
 import banner3 from "../img/card2.1.png";

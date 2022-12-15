@@ -28,7 +28,7 @@ import {
 //icons e images
 import maiorQ from "../../components/img/chevron-right-small.png";
 import bolsa from "./product-image.png";
-import { CarouselWrapper } from "../../components/Carousel";
+import { CarouselWrapper } from "../../components/carousel";
 import estrela from "../Category/icon/Vector-1.png";
 import estrela2 from "../Category/icon/Vector-2.png";
 
