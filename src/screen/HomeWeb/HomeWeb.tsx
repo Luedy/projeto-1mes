@@ -258,7 +258,7 @@ const Banner3 = styled.div`
     font-weight: 700;
     position: absolute; 
     margin-top: 26px;
-    left: 580px;
+    left: 500px;
   }
 `
 
